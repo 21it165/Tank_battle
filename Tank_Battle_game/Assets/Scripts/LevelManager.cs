@@ -4,6 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
+    void Update(){
+        if(!GameObject.FindObjectOfType<Enemy_Ai>() && SceneManager.GetActiveScene().name == "Game"){
+            LoadLevel("GameOver");
+        }
+    }
+
+    
    
     public void LoadLevel(string name){
         //Debug.Log("req : " + name);

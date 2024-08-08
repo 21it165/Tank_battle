@@ -428,6 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 15
+  BoostStartTime: 0
   RotationSpeed: 15
 --- !u!114 &5146634380987598116
 MonoBehaviour:
@@ -444,6 +445,8 @@ MonoBehaviour:
   HealDisplay: {fileID: 0}
   Kills: 0
   Health: 100
+  ShieldActive: 0
+  ShielStratTime: 0
 --- !u!1 &930234549863123139
 GameObject:
   m_ObjectHideFlags: 0

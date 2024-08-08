@@ -17,7 +17,7 @@ public class Enemy_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print(Player.Kills);
     }
 
     private void GetDamage(float Amount){
@@ -30,8 +30,10 @@ public class Enemy_Health : MonoBehaviour
             GetDamage(hitObj.GetComponent<Player_Missile>().Damage);
         }
         if(EnemyHealth <= 0f){
-            PlayerKills.text = (Player.Kills + 1).ToString();
-            Player.Kills += 1;
+             Player.Kills += 1;
+             
+            PlayerKills.text = Player.Kills.ToString();
+           
             Destroy(gameObject);
         }
     }

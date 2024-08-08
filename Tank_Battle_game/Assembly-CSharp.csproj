@@ -37,16 +37,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Enenmy\Enemy_Missile.cs" />
+     <Compile Include="Assets\Scripts\HealthOrbQT.cs" />
      <Compile Include="Assets\Scripts\Player\Turet_Movement.cs" />
      <Compile Include="Assets\Scripts\Player\Player_Missile.cs" />
      <Compile Include="Assets\Scripts\Player\Turet_Combat.cs" />
+     <Compile Include="Assets\Scripts\BoostOrbQT.cs" />
      <Compile Include="Assets\Scripts\Enenmy\Enemy_Ai.cs" />
+     <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\ShieldOrbQT.cs" />
      <Compile Include="Assets\Scripts\Enenmy\Enemy_Health.cs" />
      <Compile Include="Assets\Scripts\Player\Player_Health.cs" />
      <Compile Include="Assets\Scripts\Player\Tank_Movement.cs" />
-     <Compile Include="Assets\Scripts\HealthOrbQT.cs" />
-     <Compile Include="Assets\Scripts\ShieldOrbQT.cs" />
-     <Compile Include="Assets\Scripts\BoostOrbQT.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

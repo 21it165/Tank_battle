@@ -9,7 +9,7 @@ public class Turet_Combat : MonoBehaviour
     //public Animator animator;
     public Transform FirePad;
     public KeyCode FireButon;
-    private float Missile_Rload_Time = 0.7f;
+    private float Missile_Rload_Time = 1f;
     private bool CanFire;
     private Rigidbody rb_missile; 
     private float MissileForce = 1000f;

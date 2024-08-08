@@ -10,12 +10,16 @@ public class Player_Health : MonoBehaviour
     public float Health;
     public bool ShieldActive;
     public float ShielStratTime;
+
+    private LevelManager levelManager;
     // Start is called before the first frame update
     void Start()
     {
         Health = 100;
+        Kills = 0;
         ShieldActive = false;
         HealDisplay.text = Health.ToString();
+        levelManager = GameObject.FindObjectOfType<LevelManager>();
     }
 
     // Update is called once per frame
@@ -29,6 +33,7 @@ public class Player_Health : MonoBehaviour
         HealDisplay.text = Health.ToString();
         if(Health <= 0f){
             Destroy(gameObject);
+            levelManager.LoadLevel("GameOver");
         }
     }
 
@@ -38,6 +43,7 @@ public class Player_Health : MonoBehaviour
         }
         GameObject hitObj = collision.gameObject;
         if(hitObj.GetComponent<Enemy_Missile>() && !ShieldActive){
+            
             GetDamage(hitObj.GetComponent<Enemy_Missile>().Damage);
         }else if(hitObj.GetComponent<Enemy_Missile>() && ShieldActive){
             Destroy(hitObj);

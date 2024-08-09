@@ -115,6 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 25
+  ExplotionObj: {fileID: 5843203698128489541, guid: 60f4a5543d62a184da468c86e0cc9f4b, type: 3}
+  ExplotionPoint: {x: 0, y: 0, z: 0}
 --- !u!135 &8077771961607045877
 SphereCollider:
   m_ObjectHideFlags: 0

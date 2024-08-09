@@ -15,10 +15,7 @@ public class Enemy_Health : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        print(Player.Kills);
-    }
+   
 
     private void GetDamage(float Amount){
         EnemyHealth = EnemyHealth - Amount;
@@ -34,7 +31,7 @@ public class Enemy_Health : MonoBehaviour
              
             PlayerKills.text = Player.Kills.ToString();
            
-            Destroy(gameObject);
+            Destroy(gameObject,0.3f);
         }
     }
 }
